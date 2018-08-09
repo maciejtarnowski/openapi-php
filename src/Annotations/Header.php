@@ -13,6 +13,12 @@ namespace OpenApi\Annotations;
 class Header extends AbstractAnnotation
 {
     /**
+     * $ref See http://json-schema.org/latest/json-schema-core.html#rfc.section.7
+     * @var string
+     */
+    public $ref;
+
+    /**
      * @var string
      */
     public $header;

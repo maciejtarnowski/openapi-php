@@ -33,6 +33,21 @@ class UsingRefs
 /**
  * @OA\Response (
  *   response="Item",
- *   description="A protected item"
+ *   description="A protected item",
+ *   @OA\Header(
+ *     header="X-Header",
+ *     ref="#/components/headers/HeaderName"
+ *   )
+ * )
+ */
+
+/**
+ * @OA\Header(
+ *   header="HeaderName",
+ *   required=false,
+ *   description="A reusable header",
+ *   @OA\Schema(
+ *     type="string"
+ *   )
  * )
  */
